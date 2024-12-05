@@ -36,7 +36,7 @@ class TorchModel(nn.Module):
 #{"a":1, "b":2, "c":3...}
 #abc -> [1,2,3]
 def build_vocab():
-    chars = "你我他defghijklmnopqrstuvwxyz"  #字符集
+    chars = "abcdefghijklmnopqrstuvwxyz"  #字符集
     vocab = {"pad":0}
     for index, char in enumerate(chars):
         vocab[char] = index+1   #每个字对应一个序号
